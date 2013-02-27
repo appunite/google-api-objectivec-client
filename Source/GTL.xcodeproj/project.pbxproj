@@ -215,7 +215,7 @@
 		4F8DB6DC13FDC0240001DD6C /* Copy Static Library Headers */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = Headers;
+			dstPath = include/GTL;
 			dstSubfolderSpec = 16;
 			files = (
 				4F934E6C1512713000C4EA34 /* GTLBase64.h in Copy Static Library Headers */,
@@ -751,6 +751,7 @@
 				4F8DB6DC13FDC0240001DD6C /* Copy Static Library Headers */,
 				4F1C6E0C1027B3CE00B46459 /* Sources */,
 				4F1C6E0D1027B3CE00B46459 /* Frameworks */,
+				4C764F5516DE7BF0001AEC3A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -847,6 +848,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4C764F5516DE7BF0001AEC3A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/bin/sh Scripts/CopyHeadersToLegacyBuildDir.command";
+			shellScript = "";
+		};
 		4F14A9DB0B1276B70072EBB8 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1190,7 +1204,9 @@
 					"$(inherited)",
 					"-DGTL_IPHONE=1",
 				);
+				PRIVATE_HEADERS_FOLDER_PATH = include/GTL/private;
 				PRODUCT_NAME = GTLTouchStaticLib;
+				PUBLIC_HEADERS_FOLDER_PATH = include/GTL;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1203,7 +1219,9 @@
 					"$(inherited)",
 					"-DGTL_IPHONE=1",
 				);
+				PRIVATE_HEADERS_FOLDER_PATH = include/GTL/private;
 				PRODUCT_NAME = GTLTouchStaticLib;
+				PUBLIC_HEADERS_FOLDER_PATH = include/GTL;
 				SDKROOT = iphoneos;
 			};
 			name = Release;
