@@ -1208,6 +1208,7 @@
 				PRODUCT_NAME = GTLTouchStaticLib;
 				PUBLIC_HEADERS_FOLDER_PATH = include/GTL;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -1223,6 +1224,7 @@
 				PRODUCT_NAME = GTLTouchStaticLib;
 				PUBLIC_HEADERS_FOLDER_PATH = include/GTL;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
