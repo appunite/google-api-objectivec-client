@@ -365,8 +365,10 @@ finishedWithAuth:(GTMOAuth2Authentication *)auth
 
 
 - (void)viewDidLoad {
-  rightBarButtonItem_.customView = navButtonsView_;
-  self.navigationItem.rightBarButtonItem = rightBarButtonItem_;
+    if(_hideNavigationItems == NO) {
+        rightBarButtonItem_.customView = navButtonsView_;
+        self.navigationItem.rightBarButtonItem = rightBarButtonItem_;
+    }
 }
 
 - (void)popView {

@@ -124,6 +124,8 @@ _EXTERN NSString* const kGTMOAuth2KeychainErrorDomain       _INITIALIZE_AS(@"com
   BOOL didDismissSelf_;
 }
 
+@property (nonatomic, assign) BOOL hideNavigationItems;
+
 // the application and service name to use for saving the auth tokens
 // to the keychain
 @property (nonatomic, copy) NSString *keychainItemName;
